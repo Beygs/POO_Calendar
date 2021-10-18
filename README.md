@@ -11,5 +11,5 @@ Projet codé lors du jour 16 de THP pour appréhender la Programmation Orientée
 ## Fonctionnalités bonus
 
 - [x] EventCreator
-- [ ] CalendarDisplayer
+- [ ] CalendarDisplayer *Work in Progress*
 - [x] DateParser

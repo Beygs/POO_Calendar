@@ -13,7 +13,7 @@ module Month
     durations[month_id(month)]
   end
 
-  def self.month_weekday_start(month)
+  def self.weekday_start(month)
     Time.new(Time.now.year, month_id(month) + 1, 1).wday
   end
 end

@@ -34,7 +34,7 @@ class Event
   end
 
   def soon?
-    @start_date - Time.now < 30 * 60 && is_future?
+    @start_date - Time.now < 30 * 60 && future?
   end
 
   def to_s
@@ -42,5 +42,13 @@ class Event
     puts "Date de début : #{start_date}"
     puts "Durée : #{duration} minutes"
     puts "Invités : #{attendees.join(', ')}"
+  end
+
+  def self.find_events_by_month(month)
+    @@all_events.select{ |e| e.start_date.split('-')[1] == month }
+  end
+
+  def self.find_event_by_date(date)
+    @@all_event.select{ |e| e.start_date }
   end
 end
