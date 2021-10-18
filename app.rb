@@ -21,5 +21,7 @@ current_event = Event.new((Time.now - 30 * 60).to_s, 90, 'current', ['a@a.a', 'b
 soon_event = Event.new((Time.now + 30 * 60).to_s, 90, 'soon', ['a@a.a', 'b@b.b'])
 future_event = Event.new('2021-10-20 12:00', 30, 'test', ['a@a.a', 'b@b.b'])
 
+test = CalendarDisplayer.new('octobre')
+
 binding.pry
 puts 'end of file'

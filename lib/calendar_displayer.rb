@@ -11,8 +11,13 @@ class CalendarDisplayer
   def display_month
     display = []
     @month_length.times do |i|
-      display << DayDisplayer.new(i)
+      events = 
+      display << DayDisplayer.new(i + 1)
     end
     display
+  end
+
+  def display
+    puts @display_calendar.map { |day| day.day_display }
   end
 end
